@@ -1,0 +1,49 @@
+{
+   "services":[
+      {
+         "path":"/recipe",
+         "method":"GET",
+         "description":"Fetch all recipes."
+      },
+      {
+         "path":"/recipe/{query}",
+         "method":"GET",
+         "description":"Fetch recipe info, returned values are: likes, images, title..."
+      },
+      {
+         "path":"/recipe/add",
+         "method":"GET",
+         "description":"Does nothing yet"
+      },
+      {
+         "path":"/recipe/add",
+         "method":"POST",
+         "description":"Add new recipe",
+         "accepted values":{
+            "title":"recipe title, string",
+            "desc":"recipe description, string",
+            "username":"username of publisher, string",
+            "ingredients":[
+               {
+                  "ingredient":"ingredient title"
+               },
+               {
+                  "ingredient_amount":"amount of ingredient"
+               },
+               {
+                  "ingredient_unit":"measuring unit of ingredient"
+               }
+            ],
+            "step":"recipe step description"
+         }
+      },
+      {
+         "path":"/recipe/add",
+         "method":"GET",
+         "description":"Does nothing yet"
+      },
+      {
+         "":""
+      }
+   ]
+}
